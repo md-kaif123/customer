@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prinston University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Prinston University</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Prinston University</h2>
+        <p>Empowering students with knowledge, innovation, and excellence.</p>
+        <a href="#admissions" class="btn">Apply Now</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Prinston University is dedicated to providing quality education,
+            fostering research, and building future leaders.
+        </p>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Our Courses</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Computer Science</h3>
+                <p>Learn programming, AI, and software development.</p>
+            </div>
+
+            <div class="card">
+                <h3>Business Administration</h3>
+                <p>Develop leadership and management skills.</p>
+            </div>
+
+            <div class="card">
+                <h3>Engineering</h3>
+                <p>Explore modern engineering technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="section">
+        <h2>Admissions</h2>
+        <p>Applications for the new academic year are now open.</p>
+        <button onclick="showMessage()">Apply Today</button>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: info@prinstonuniversity.edu</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Mysuru, Karnataka, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Prinston University. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+header{
+    background:#002147;
+    color:white;
+    padding:15px 0;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h2{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    background:#ffb703;
+    color:black;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+button{
+    padding:12px 20px;
+    background:#002147;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003f88;
+}
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+function showMessage() {
+    alert("Thank you for your interest in Prinston University! Admissions will contact you soon.");
+}
